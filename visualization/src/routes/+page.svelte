@@ -3,6 +3,7 @@
   import IterationLabelGrid from '$lib/components/IterationLabelGrid.svelte';
   import TextComparisonViewer from '$lib/components/TextComparisonViewer.svelte';
   import ScholaWriteDetailPanel from '$lib/components/ScholaWriteDetailPanel.svelte';
+    import SemanticViews from '$lib/components/SemanticViews.svelte';
 
 
   function scrollToTop() {
@@ -24,7 +25,7 @@
 
 <!-- Section 1 -->
 <section id="schola" class="main-block block-schola">
-  <h2>🧾 ScholaWrite Dataset Visualization</h2>
+  <h2>ScholaWrite Dataset Visualization</h2>
   <p class="block-desc">Visualizing how real human writing labels evolve over time.</p>
 
 
@@ -41,7 +42,7 @@
 
 <!-- Section 2 -->
 <section id="llm" class="main-block block-llm">
-  <h2>🤖 LLM Generation Evolution</h2>
+  <h2>LLM Generation Evolution</h2>
   <p class="block-desc">Tracking the iteration process and label dynamics of LLM outputs.</p>
 
   <div class="sub-section">
@@ -55,9 +56,19 @@
   </div>
 </section>
 
+
+<section id="compare" class="main-block block-compare">
+  <h2>Semantic Visualization</h2>
+  <p class="block-desc">Analyzing differences in semantics during writing iteration.</p>
+
+  <div class="sub-section">
+    <SemanticViews />
+  </div>
+</section>
+
 <!-- Section 3 -->
 <section id="compare" class="main-block block-compare">
-  <h2>👥 LLM vs Human Revision</h2>
+  <h2>LLM vs Human Revision</h2>
   <p class="block-desc">Analyzing differences in revision styles and strategies.</p>
 
   <div class="sub-section">
